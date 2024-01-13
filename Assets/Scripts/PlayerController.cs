@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
+    public float speed = 5.0f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(20 * Time.deltaTime * Vector3.forward );
+        transform.Translate(speed * Time.deltaTime * Vector3.forward );
     }
 }
